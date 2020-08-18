@@ -1,10 +1,15 @@
 from tkinter import *
 from pwdGenerator import *
+from tkinter import messagebox
 
 global l1, l2, l3
 
 root = Tk()
 root.title("Generate your password!")
+
+
+def info():
+    messagebox.showerror(title=None, message="Not enough characters!")
 
 
 def l1Fun():
@@ -14,6 +19,9 @@ def l1Fun():
     le2 = int(le2)
     le3 = number3.get("1.0", "end")
     le3 = int(le3)
+    if numberChecker(le1, le2, le3) == False:
+        info()
+        exit()
     fileSave(generator(le1, le2, le3))
 
 

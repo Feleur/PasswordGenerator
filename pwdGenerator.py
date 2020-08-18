@@ -3,9 +3,13 @@ import string
 import random
 
 
+def numberChecker(x, y, z):
+    if x+y+z < 8:
+        return False
+
+
 def generator(x, y, z):
     password_list = []
-    string.ascii_letters
     special = '!@#$%^&*()'
 
     counter = 1
