@@ -5,4 +5,4 @@ You need to open the application, then choose how many letters, number and speci
 You can choose no letters, no numbers or no special characters. 
 Minimum number of characters is not set. 
 
-After this, the password is show in the console and saved into file named **pwdFile.txt**.
+After this, the password is shown in the console and saved into file named **pwdFile.txt**.
